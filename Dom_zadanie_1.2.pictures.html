@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_zadanie_1.2.1</title>
+</head>
+<body>
+    <img id="pic" src="images/1.jpg" alt="">
+    <script>
+        let nPic = prompt("Введите номер картинки:");
+        
+        if (nPic >= 1 && nPic <= 11) {
+            if (nPic >= 1 && nPic <= 10) {
+                let type = prompt("Введите тип картинки:");
+                if (type == "jpg") {
+                pic.src = `images/${nPic}.jpg`;
+            } else if (type == "png") {
+                pic.src = `images/${nPic}.png`;
+            } else {
+                alert("Неверный тип файла");
+            }
+            } else {
+                pic.src = `images/11.jpg`;
+            }
+        } else {
+            alert("Неверный номер картинки");
+        }
+    </script>
+</body>
+</html>
